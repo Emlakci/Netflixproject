@@ -60,6 +60,10 @@ option
     background-color: red;
     opacity: 0.8;
 }
+.textField
+{
+    padding-top: 1.6%;
+}
 .banner1
 {
     width: 100%;
