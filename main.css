@@ -1,0 +1,368 @@
+body
+{
+    background-color: black;
+    font-family: sans-serif;
+}
+img
+{
+    max-width: 100%;
+}
+.header
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.2)), url(img/netflix.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.brand_nav
+{
+    width: 50%;
+}
+.brand_nav img
+{
+    max-width: 7rem;
+    width: 50%; 
+    min-width: 5rem;
+}
+.selectpicker
+{
+    font-family: 'FontAwesome', 'Second Font name';
+}
+.ot_ac
+{
+    width:auto !important;
+    padding: 0% 2% !important;
+    height: 2.2rem !important;
+    background-color: red;
+    
+}
+.ot_ac:hover
+{
+    background-color: red;
+    opacity: 0.8;
+}
+.ot_ac a
+{
+    display: flex;
+}
+option
+{
+    background-color: grey;
+}
+.headtext
+{
+    font-weight:600;
+    font-size:2.9rem;
+}
+.btn:hover
+{
+    background-color: red;
+    opacity: 0.8;
+}
+.banner1
+{
+    width: 100%;
+    max-height: 70vh !important;
+    border-top: 8px solid rgb(35, 35, 35);
+}
+.textSize1
+{
+    font-size: 50px;
+    padding: 0 15%;
+}
+.textSize2
+{
+    font-size: 26px;
+    letter-spacing: 1px;
+    padding: 0;
+}
+.textSize3
+{
+    font-size: 18px;
+    padding: 0;
+}
+.textSize4
+{
+    width: 75%;
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 10%;
+    padding: 0;
+}
+.textSize5
+{
+    font-size: 26px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0;
+}
+.textSize6
+{
+    font-size: 50px;
+    width: 97%;
+    margin-left: 3%;
+    padding: 1%;
+}
+.textSize7
+{
+    font-size: 26px;
+    width: 97%;
+    margin-left: 3%;
+    padding: 0;
+}
+.textSize8
+{
+    color:#737373;
+}
+.tv
+{
+   position: relative;
+   max-height: 55vh;
+   min-height: 50vh;
+}
+video
+{
+    position: absolute;
+    width:72%;
+    left:13.5%;
+    top:21%;
+    z-index: -1;
+}
+.img_mobile
+{
+    width: 100%;
+    max-height:55vh;
+    min-height:50vh;
+}
+.vid_2
+{
+    width:59.5%;
+    left:20%;
+    top:14%;
+}
+.question
+{
+    width: 100%;
+    border-top: 8px solid rgb(35, 35, 35);
+    border-bottom: 8px solid rgb(35, 35, 35);
+}
+.questionText
+{
+    margin: 12% auto 5% auto;
+    font-weight: 700;
+}
+.accordion-button
+{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    margin-top: .5rem;
+}
+.accordion-button:focus
+{
+    box-shadow:none;
+}
+.accordion-button:not(.collapsed)
+{
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+.accordion-item
+{
+    border:none;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+.accordion-button::after
+{
+    background-image: url(img/plus.svg);
+    filter: invert() brightness(100);
+}
+.accordion-button:not(.collapsed)::after
+{
+    background-image: url(img/x.svg);
+    filter: invert() brightness(100);
+}
+footer a, p
+{
+    font-size: 13px;
+    text-decoration: none;
+    color:#737373;
+}
+footer a:hover
+{
+    transition: all 0.5ms ease-in;
+    text-decoration: underline;
+}
+footer select
+{
+    margin-bottom: 3%;
+    
+}
+@media screen and (max-width: 992px) 
+{
+    .banner1
+    {
+        height: auto !important;
+        max-height: 100vh !important;
+    }
+    .textSize1
+    {
+    font-size: 40px;
+    padding: 0;
+    }
+    .textSize2
+    {
+    font-size: 20px;
+    padding: 0;
+    }
+    .textSize3
+    {
+    font-size: 18px;
+    padding: 0 10%;
+    }
+    .textSize4
+    {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 1% auto;
+    text-align: center;
+    }
+    .textSize5
+    {
+    font-size: 20px;
+    width: 92%;
+    margin: 0px auto;
+    text-align: center;
+    }
+    .textSize6
+    {
+        font-size: 40px;
+        width: 100%;
+        margin-left: 0%;
+        padding: 1%;
+        text-align: center;
+    }
+    .textSize7
+    {
+        font-size: 20px;
+        width: 100%;
+        margin-left: 0%;
+        padding: 0;
+        text-align: center;
+    }
+    .tv
+    {    
+        margin: 2% 17%;
+        height: auto !important;
+        max-height: auto;
+        min-height: auto;
+    }
+    .vid
+    {
+        width:71%;
+        top:21.5%;
+        left:14%;
+    }
+    .vid_2
+    {
+        width:59.5%;
+        left:20%;
+        top:14%;
+    }
+}
+
+@media screen and (max-width: 549px)
+{
+    .header
+    {
+        height:73vh;
+    }
+    .banner1
+    {
+        height: 70vh;
+    }
+    .textSize1
+    {
+    font-size: 26px;
+    }
+    .textSize2
+    {
+    font-size: 18px;
+    }
+    .textSize4
+    {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 10% auto 0px auto;
+    text-align: center;
+    }
+    .textSize5
+    {
+    font-size: 18px;
+    width: 100%;
+    margin: 5% auto 0px auto;
+    text-align: center;
+    }
+    .textSize6
+    {
+    font-size: 26px;
+    width: 100%;
+    margin: 10% auto 0px auto;
+    text-align: center;
+    }
+    .textSize7
+    {
+    font-size: 18px;
+    width: 100%;
+    margin: 5% auto 0px auto;
+    text-align: center;
+    }
+    .tv
+    {    
+        margin: 1% 1% 10% 1%;
+        height: auto !important;
+        max-height: auto;
+        min-height: auto;
+    }
+    .vid
+    {
+        width:71%;
+        top:21.5%;
+        left:14%;
+    }
+    .img_mobile
+    {
+        margin: 1% 1% 10% 1%;
+        height: auto !important;
+        max-height: auto;
+        min-height: auto;
+    }
+    .vid_2
+    {
+        width:59.5%;
+        left:20%;
+        top:14%;
+    }
+
+
+}
+@media only screen and (max-width: 349px), only screen and (min-width: 350px) and (max-width: 399px), 
+         screen and (min-width: 400px) and (max-width: 549px), only screen and (min-width: 550px) and (max-width: 949px)
+{
+    nav
+    {
+        height: 45px;
+    }
+    .brand_nav
+    {
+        width: 30%;
+    }
+}
+@media only screen and (min-width: 550px) and (max-width: 949px)
+{
+    .nav-area
+    {
+        margin: 0px 45px;
+    }
+}

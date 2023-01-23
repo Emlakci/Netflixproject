@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="inputs.css">
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+<!-- HEADER -->
+    <div class="header">
+        <div class="container-fluid p-0 justify-content-start">
+            <div class="container w-auto d-inline-flex my-4 mx-4">
+                <img class="netflixLogo" src="img/netflix_logo.png" width="170rem">
+            </div>
+        </div>
+        <!-- LOGIN AREA -->
+        <div class="container-fluid w-auto m-md-3">
+            <div class="row justify-content-center text-white">
+                <div class="loginArea col-md-5 p-md-5 px-4 my-md-2 h-auto align-content-md-center">
+                    <h1 class="fw-bolder py-1">Oturum Aç</h1>
+                    <p id="controlErorMessage" class=" my-auto p-2 rounded-2 mt-4 controlErorMessage" hidden>Bu e‑posta adresi ile bağlantılı bir hesap bulamadık. Lütfen yeniden deneyin ya da <a href="index.html">yeni bir hesap oluşturun.</a> </p>
+                    <div class="container-md p-0 my-3 d-flex flex-column w-auto"
+                    id="inputs">
+                        <div class="inputArea container-fluid p-0 mb-2 d-flex">
+                            <input id="input1" class="my-1 rounded-2 px-3 pt-2" type="text">
+                            <label onclick="reducer(this)" id="labelEmail" class="textField rounded-2">E-posta veya telefon numarası</label>
+                        </div>
+                        <span id="erorSpan1" class="errormsg" id="errorMessage" hidden>Lütfen geçerli bir telefon numarası veya e‑posta adresi girin.</span>
+                        <div class="inputArea container-fluid p-0 d-flex"> 
+                            <input id="input2" class="my-1 rounded-2 px-3 py-2" type="password">
+                            <label onclick="reducer(this)" id="labelPassword" class="textField rounded-2">Parola</label>
+                            <button onclick ="show()" id="show" hidden>GÖSTER</button>
+                        </div>
+                        <span id="erorSpan2" class="errormsg" id="passMessage" hidden>Parolanız 4 ila 60 karakter olmalıdır.</span>     
+                    </div>
+                    <button onclick="controler()" class="d-block w-100 p-3 rounded-2 text-center text-white" type="submit" id="submit">Oturum Aç</button>
+                    <div class="container-md d-flex p-0 justify-content-between align-items-center">
+                        <div class="container w-50 p-0 mx-1">
+                            <input class="form-check-input" type="checkbox" value="0" id="rememberMe"><a class="rememberMe" href=""> Beni Hatırla</a> 
+                        </div>
+                        <a href="help">Yardım ister misiniz?</a>
+                    </div>
+                    <div class="container-md my-1 my-sm-5">
+                        <p class="member fs-6" >Netflix'e katılmak ister misiniz? <a class="text-white fw-bolder fs-6 " href="index.html"> Şimdi kaydolun</a></p>
+                        <p class="explanations">Bu sayfa robot olmadığınızı kanıtlamak için Google reCAPTCHA tarafından korunuyor. <br><a onclick="show2()" href="javascript:;"  rel="noreferrer noopener">Daha fazlasını öğrenin.</a> </p>                       
+                        <p id="moreKnowlegdeText" hidden>Google reCAPTCHA tarafından toplanan bilgiler Google'ın Gizlilik Politikası ve Hizmet Şartları'na tabidir. Bu bilgiler reCAPTCHA hizmetinin sağlanması, sürdürülmesi, geliştirilmesi ve genel hizmet amaçları için kullanılır (Google tarafından kişiselleştirilmiş reklamlar sunmak için kullanılmaz).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- LOGIN AREA -->
+    </div>
+<!-- HEADER -->
+<!-- FOOTER -->
+<footer>
+    <div class="container-fluid p-0 h-auto"> 
+        <div class="footer row justify-content-center">
+            <div class="col-lg-10 my-2 px-md-5">
+                <p class="textSize8 px-md-5">Sorularınız mı var? 0850-390-7444 numaralı telefonu arayın</p>
+                <div class="px-md-5">
+                    <div class="row p-md-5 px-2">
+                        <div class="col-6 col-lg-3 col-md-4"><a class="" href="">SSS</a></div>
+                        <div class="col-6 col-lg-3 col-md-4"><a class="" href="">Yardım Merkezi</a></div>
+                        <div class="col-6 col-lg-3 col-md-4"><a class="" href="">Kullanım Koşulları</a></div>
+                        <div class="col-6 col-lg-3 col-md-4"><a class="" href="">Gizlilik</a></div>
+                        <div class="col-6 col-lg-3 col-md-4"><a href="">Çerez Tercihleri</a></div>
+                        <div class="col-6 col-lg-3 col-md-4"><a href="">Kurumsal Bilgiler</a></div>   
+                    </div> 
+            </div>
+            <div class="container-md justify-content-start m-md-2 p-0">
+                <div class="col-12 py-2 px-md-5">
+                    <select class="selectpicker form-select-lg py-sm-2 mx-md-3 px-md-2 rounded-1 bg-body-emphasis text-white w-auto" aria-label=".form-select example">
+                        <option selected value="1">&#xf0ac Türkçe</option>
+                        <option value="2">&#xf0ac English</option>
+                    </select>
+                </div>
+            </div>   
+        </div>
+        
+        </div>
+    </div>    
+</footer>
+<!-- FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="loginpage.js"></script>  
+</body>
+</html>
